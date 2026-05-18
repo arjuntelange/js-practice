@@ -1,0 +1,44 @@
+<!-- 2️⃣ Change Background Color
+
+Create a button that changes webpage background color when clicked.
+
+📌 Practice:
+
+document.body.style
+Event handling -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 10px 15px;
+
+            background: rgba(128, 255, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+
+            font-size: 1.2rem;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="color-btn" class="btn">Change Color</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
