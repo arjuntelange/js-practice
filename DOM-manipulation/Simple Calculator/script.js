@@ -7,7 +7,7 @@ const division = document.getElementById("div-btn");
 const result = document.getElementById("result");
 
 addition.addEventListener( "click", () => {
-    if (input_1.value == "" && input_2.value == "") 
+    if (input_1.value == "" || input_2.value == "") 
     {
         alert("Enter numbers to perform operations");
         return;
@@ -16,6 +16,9 @@ addition.addEventListener( "click", () => {
     const add_result = Number(input_1.value) + Number(input_2.value);
     
     result.value = add_result;
+
+    input_1.value = "";
+    input_2.value = "";
 });
 
 subtraction.addEventListener( "click", () => {
@@ -28,6 +31,9 @@ subtraction.addEventListener( "click", () => {
     const sub_result = Number(input_1.value) - Number(input_2.value);
     
     result.value = sub_result;
+
+    input_1.value = "";
+    input_2.value = "";
 });
 
 multiplication.addEventListener( "click", () => {
@@ -40,6 +46,9 @@ multiplication.addEventListener( "click", () => {
     const mul_result = Number(input_1.value) * Number(input_2.value);
     
     result.value = mul_result;
+
+    input_1.value = "";
+    input_2.value = "";
 });
 
 division.addEventListener( "click", () => {
@@ -52,4 +61,7 @@ division.addEventListener( "click", () => {
     const div_result = Number(input_1.value) / Number(input_2.value);
     
     result.value = div_result;
+
+    input_1.value = "";
+    input_2.value = "";
 });
