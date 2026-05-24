@@ -14,30 +14,27 @@ const previous_button = document.getElementById("previous-btn");
 
 
 next_button.addEventListener("click", () => {
-    image.style.opacity = 0;
+    if (current_img < img_arr.length - 1) {
+        image.style.opacity = 0;
 
-    setTimeout(() => {
-        if (current_img < img_arr.length - 1) {
+        setTimeout(() => {
             current_img++;
-
             image.src = img_arr[current_img];
-        }
-
-        image.style.opacity = 1;
-    }, 300)
+            image.style.opacity = 1;
+        }, 300);
+    }
 });
 
 
 previous_button.addEventListener("click", () => {
-    image.style.opacity = 0;
 
-    setTimeout(() => {
-        if (current_img > 0) {
+    if (current_img > 0) {
+        image.style.opacity = 0;
+
+        setTimeout(() => {
             current_img--;
-
             image.src = img_arr[current_img];
-        }
-
-        image.style.opacity = 1;
-    }, 300)
+            image.style.opacity = 1;
+        }, 300);
+    }
 });
