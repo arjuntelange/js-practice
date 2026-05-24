@@ -1,0 +1,51 @@
+<!-- 📘 Form Validation
+Features
+Name input
+Email input
+Password input
+Submit button
+Error messages -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+
+            <div class="content name-field">
+                <label>Name:</label>
+                <input type="text" id="input-name">
+                <p id="name-error"></p>
+            </div>
+
+            <div class="content email-field">
+                <label>Email:</label>
+                <input type="email" id="input-email">
+                <p id="email-error"></p>
+            </div>
+
+            <div class="content pass-field">
+                <label>Password:</label>
+                <input type="password" id="input-pass">
+                <p id="pass-error"></p>
+            </div>
+
+            <button id="btn">Log In</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
