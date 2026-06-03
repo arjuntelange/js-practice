@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("https://images.pexels.com/photos/5432833/pexels-photo-5432833.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 500px;
+  padding: 45px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 28px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.input {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 25px;
+}
+
+#input-city {
+  padding: 8px 18px;
+  width: 60%;
+
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 28px;
+  outline: none;
+
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#input-city:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+}
+
+#input-city::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#search-btn {
+  padding: 8px 14px;
+
+  border: none;
+  border-radius: 14px;
+  background: #51a2ff;
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#search-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 4px 10px rgba(0, 55, 117, 0.4);
+}
+
+#search-btn:active {
+  transform: scale(0.95);
+}
+
+.weather-info {
+  padding: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.weather-info p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#temperature {
+  font-size: 1.5rem;
+}
