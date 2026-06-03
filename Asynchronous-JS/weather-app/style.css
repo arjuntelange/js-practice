@@ -14,8 +14,8 @@ body {
   font-family: "Poppins", sans-serif;
 
   background:
-    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("https://images.pexels.com/photos/5432833/pexels-photo-5432833.jpeg");
+    linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg");
 
   background-size: cover;
   background-position: center;
@@ -33,9 +33,9 @@ body {
 
   text-align: center;
 
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
 
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(12px);
 
   border: 1px solid rgba(255, 255, 255, 0.25);
 
